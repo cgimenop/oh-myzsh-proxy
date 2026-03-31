@@ -1,0 +1,17 @@
+services:
+  oh-myzsh-proxy:
+    build: .
+    container_name: oh-myzsh-proxy
+    ports:
+      - "9418:9418"
+    volumes:
+      - ./config:/etc/git-proxy/config:ro
+      - plugin-mirrors:/var/lib/git-proxy/mirrors
+      - plugin-logs:/var/log
+    restart: unless-stopped
+
+volumes:
+  plugin-mirrors:
+    driver: local
+  plugin-logs:
+    driver: local
