@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+.Spotlight-V100
+.Trashes
+._*
+
+# Bash
+*.sh~
+*.sh.bak
+.bash_history
+.bash_sessions
+
+# General
+*.log
+*.tmp
+*.temp
+node_modules/
+.env
+.env.local
+
+# IDE/Editor
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# OS
+Thumbs.db
